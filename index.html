@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mirror</title>
+</head> 
+
+<body>
+    <div style="position:fixed; bottom:0px; width:100%">
+        <button>Distance</button>
+        <input id="slider" type=range min=0 max=9 step=0.1 onchange="move()" value=0 style="width:50%"/>
+    </div>
+    <div style="position:fixed; top:0px; width:100%">
+        <button>Radius</button>
+        <input id="radius" type=range title="Radius" min=0 max=10 step=1 onchange="rad()" value=0 style="width:50%"/>
+    </div>
+    <script src='lib/three.js'></script>
+    <script src='js/mirror.js'></script>
+</body>
+</html>
